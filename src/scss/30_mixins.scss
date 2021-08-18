@@ -1,0 +1,15 @@
+@mixin small {
+  @media screen and (max-width: 767px) {
+    @content;
+  };
+}
+
+@mixin medium {
+  @media screen and (min-width: 768px) {
+    @content;
+  };
+};
+
+@function cRems($value) {
+  @return math.div($value, 16px) * 1rem;
+}
