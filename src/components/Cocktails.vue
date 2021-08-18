@@ -41,7 +41,7 @@
     export default {
         data () {
             return {
-                cocktail: {},
+                cocktail: null,
                 ingredientsList: [],
             };
         },
