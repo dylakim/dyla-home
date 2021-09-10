@@ -1,9 +1,20 @@
 [
   {
-    "name": "Kim Dyla",
-    "image": "kim.png",
+    "name": "Daniel",
+    "image": "dan.jpg",
+    "title": "Open Source Architect",
+    "socials": {
+      "twitter": "https://twitter.com/dyladan",
+      "github": "https://github.com/dyladan",
+      "linkedin": "https://www.linkedin.com/in/danieldyla/",
+      "website": "https://dan.dyla.dev"
+    }
+  },
+  {
+    "name": "Kim",
+    "image": "kim.jpg",
     "title": "Front End Web Developer",
-    "social": {
+    "socials": {
       "twitter": "https://twitter.com/dyla_kim",
       "instagram": "https://www.instagram.com/kim.dyla/",
       "github": "https://github.com/dylakim",
@@ -12,14 +23,8 @@
     }
   },
   {
-    "name": "Daniel Dyla",
-    "image": "dan.png",
-    "title": "Open Source Architect",
-    "social": {
-      "twitter": "https://twitter.com/dyladan",
-      "github": "https://github.com/dyladan",
-      "linkedin": "https://www.linkedin.com/in/danieldyla/",
-      "website": "https://dan.dyla.dev"
-    }
+    "name": "Cat",
+    "image": "cat.jpg",
+    "title": "Chief Nap Officer"
   }
 ]

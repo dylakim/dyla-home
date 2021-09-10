@@ -11,11 +11,14 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #333;
+  color: $colorBlack;
 }
 
 h1 {
-  color: $yellow2021;
   font-size: cRems(48px);
   font-weight: bold;
+}
+
+a {
+  color: $colorBlack
 }
