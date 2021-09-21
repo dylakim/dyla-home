@@ -7,21 +7,24 @@
         <ImageSlider />        
         <People />
         <Cocktails />
+        <Footer />
     </div>
 </template>
 
 <script>
 import Cocktails from "./components/Cocktails.vue";
-import People from "./components/People.vue";
+import Footer from "./components/TheFooter.vue";
 import ImageSlider from "./components/ImageSlider.vue";
+import People from "./components/People.vue";
 
 export default {
     name: "App",
 
     components: {
         Cocktails,
-        People,
+        Footer,
         ImageSlider,
+        People,
     },
 };
 </script>
@@ -32,7 +35,9 @@ export default {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    padding: 15px 20px;
+    margin: auto;
+    max-width: 1440px;
+    padding: cRems(20px) cRems(20px);
     
     h1 {
         font-size: cRems(24px);

@@ -10,6 +10,12 @@
   };
 };
 
+@mixin large {
+  @media screen and (min-width: 1440px) {
+    @content;
+  };
+};
+
 @function cRems($value) {
   @return math.div($value, 16px) * 1rem;
 }

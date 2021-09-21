@@ -1,7 +1,7 @@
 <template>
     <footer>
-        <p>Random cocktail data provided by <a href="https://www.thecocktaildb.com/" target="_blank">TheCocktailDB</a>.</p>
-        <p>Colors inspired by <a href="https://www.pantone.com/color-of-the-year-2021" target="_blank">Pantone Color of the Year 2021</a>.</p>
+        <p class="divider">&lt;/&gt;</p>
+        <p>View source code on <a href="https://github.com/dylakim/dyla-home" target="_blank">GitHub</a></p>
     </footer>
 </template>
 
@@ -11,9 +11,16 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     footer {
-        padding: cRems(20px) 0;
-        
+        padding: cRems(60px) 0;
+
+        p {
+            font-size: cRems(14px);
+
+            &.divider {
+                padding-bottom: cRems(20px);
+            }
+        }
     }
 </style>

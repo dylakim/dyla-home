@@ -16,14 +16,13 @@
                 <h2>{{ person.name }}</h2>
                 <p>{{ person.title }}</p>
 
-                <a
+                <SocialLink
                     v-for="(url, type) in person.socials"
                     :key="type"
-                    :href="url"
-                    target="_blank"
-                >
-                    <font-awesome-icon :icon="socialIcons[type]" />
-                </a>
+                    :url="url"
+                    :type="type"
+                    :name="person.name"
+                />
             </div>
         </div>
     </div>
@@ -31,18 +30,16 @@
 
 <script>
 import people from '../data/people.json';
+import SocialLink from './SocialLink.vue';
 
 export default {
+    components: {
+        SocialLink,
+    },
+
     data () {
         return {
             people,
-            socialIcons: {
-                twitter: ['fab', 'twitter'],
-                instagram: ['fab', 'instagram'],
-                github: ['fab', 'github'],
-                linkedin: ['fab', 'linkedin-in'],
-                website: ['fas', 'globe'],
-            }
         };
     },
 };
@@ -60,10 +57,12 @@ export default {
     position: relative;
     z-index: 2;
 
+
     @include medium {
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        margin: cRems(100px) 0 cRems(50px);
+        margin: cRems(100px) auto cRems(50px);
+        max-width: 1440px;
     }
 }
 
@@ -85,7 +84,7 @@ export default {
         margin: auto;
 
         @include medium {
-            width: cRems(163px);
+            width: cRems(240px);
         }
 
         img {
@@ -105,16 +104,8 @@ export default {
         }
 
         p {
-            font-size: cRems(14px);
-            margin-bottom: cRems(40px);
-        }
-
-        a {
-            margin-right: cRems(15px);
-
-            &:last-of-type {
-                margin-right: 0;
-            }
+            font-size: cRems(16px);
+            margin-bottom: cRems(30px);
         }
     }
 }

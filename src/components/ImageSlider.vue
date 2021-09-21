@@ -40,24 +40,58 @@ export default {
         return {
             carouselSettings: {
                 autoplay: true,
-                autoplaySpeed: 7000,
+                autoplaySpeed: 4000,
                 arrows: false,
                 dots: true,
                 fade: true,
+                pauseOnFocus: true,
+                pauseOnHover: true,
+                pauseOnDotsHover: true,
             },
             imageDetails: [
-                // TODO: get more images for slider
+                {
+                    location: 'Pictured Rocks National Lakeshore, Michigan',
+                    labelColor: '#fff',
+                },
                 {
                     location: 'Horsetooth Mountain, Colorado',
                     labelColor: '#fff',
                 },
                 {
-                    location: 'Somewhere, Else',
+                    location: 'Florence, Italy',
+                    labelColor: '#fff',
+                },
+                {
+                    location: 'Hocking Hills, Ohio',
+                    labelColor: '#fff',
+                },
+                {
+                    location: 'New River Gorge, West Virginia',
+                    labelColor: '#fff',
+                },
+                {
+                    location: 'Park City, Utah',
                     labelColor: '#000',
                 },
                 {
-                    location: 'A cool, Place',
-                    labelColor: '#333',
+                    location: 'Seattle, Washington',
+                    labelColor: '#fff',
+                },
+                {
+                    location: 'Toronto, Canada',
+                    labelColor: '#fff',
+                },
+                {
+                    location: 'Gmunden, Austria',
+                    labelColor: '#000',
+                },
+                {
+                    location: 'Traverse City, Michigan',
+                    labelColor: '#fff',
+                },
+                {
+                    location: 'Winter Park, Colorado',
+                    labelColor: '#fff',
                 },
             ],
         };
@@ -69,6 +103,8 @@ export default {
 // Can't be scoped because of slick slider override styles
 
 .carousel {
+    margin: auto;
+    max-width: 1440px;
     position: relative;
 
     .carousel-image {
@@ -77,7 +113,7 @@ export default {
         position: relative;
 
         @include medium {
-            height: cRems(360px);
+            height: cRems(490px);
         }
 
         img {
@@ -94,7 +130,7 @@ export default {
     .image-details {
         align-items: center;
         display: flex;
-        font-weight: 400;
+        font-weight: 500;
         justify-content: flex-start;
         position: absolute;
         bottom: cRems(20px);
@@ -113,9 +149,17 @@ export default {
 
     }
     .slick-dots {
-        button:before {
-            color: #c5c5c5;
-            opacity: 1;
+        button {
+            &:before {
+                color: #c5c5c5;
+                opacity: 1;
+            }
+
+            &:focus,
+            &:hover {
+                background: #ececec;
+                transition: all ease-in-out .3s;
+            }
         }
     }
 }
