@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Daniel",
+    "image": "dan.jpg",
+    "title": "Open Source Architect",
+    "socials": {
+      "twitter": "https://twitter.com/dyladan",
+      "github": "https://github.com/dyladan",
+      "linkedin": "https://www.linkedin.com/in/danieldyla/",
+      "website": "https://dyladan.me/"
+    }
+  },
+  {
+    "name": "Kim",
+    "image": "kim.jpg",
+    "title": "Sr. Front End Web Developer",
+    "socials": {
+      "twitter": "https://twitter.com/dyla_kim",
+      "instagram": "https://www.instagram.com/kim.dyla/",
+      "github": "https://github.com/dylakim",
+      "linkedin": "https://www.linkedin.com/in/dylakim/",
+      "website": "https://kim.dyla.dev"
+    }
+  },
+  {
+    "name": "Cannoli",
+    "image": "cat.jpg",
+    "title": "Chief Nap Officer"
+  }
+]

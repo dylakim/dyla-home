@@ -1,24 +1,17 @@
-# dyla-domain
+# </> the dylas
 
-## Project setup
-```
-npm install
-```
+Landing page for [dyla.dev](http://dyla.dev). Features photos from some of our favorite travel destinations and a bit of our personality. Will serve as a playground or showcase for random personal projects in the future.
+## Technologies Used
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Axios
+- TheCocktailDB
+- Darkroom
+- Firebase
+- FontAwesome
+- Git
+- JSON
+- NPM
+- SCSS
+- SlickSlider
+- VSCode
+- Vue.js
